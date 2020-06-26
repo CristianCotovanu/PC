@@ -1,0 +1,44 @@
+Se citesc N numere complexe sub forma (parte reală, parte imaginară).
+Să se afișeze numerele în ordine crescătoare după modulul acestora
+(|a + ib| = sqrt(a^2 + b^2)). În caz de egalitate, se sortează (crescător)
+după partea reala iar ulterior după partea imaginară.
+
+
+INPUT						OUTPUT
+3						(0, 1)
+(-1, 3)						(-1, 3)
+(4, 10)						(4, 10)
+(0, 1)
+
+
+
+Să se implementeze o structură de date de tip stivă (pentru șiruri de
+   caractere):
+
+	struct deque {
+		int top;
+		char elements[1000][31];
+	};
+
+Operațiile pe această stivă vor fi:
+* pop - șterge elementul din vârful stivei (dacă stiva este goala atunci nu se
+	întâmplă nimic);
+* push cuv - adaugă cuvântul în vârful stivei;
+* print - afișează elementele stivei începând cu cel mai vechi adăugat.
+
+Cuvintele citite nu vor conține spatii (doar caractere alfanumerice) și vor avea
+lungimea maximă 30. Numărul maxim de operații citite este 1500.
+
+
+INPUT							OUTPUT
+9							
+print							mere 
+push mere						mere banane 
+print							mere 
+push banane						
+print
+pop
+print
+pop
+print
+

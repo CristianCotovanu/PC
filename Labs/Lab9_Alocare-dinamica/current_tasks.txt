@@ -1,0 +1,21 @@
+Realizati o functie care “simuleaza” comportamentul functiei realloc.intr-un mod simplificat.
+int *my_realloc(int *initial, int old_size, int new_size)
+
+Se aloca o noua zona de memorie si se copiaza elementele in noua zona (daca alocarea rueseste)
+    Se returneaza noua zona daca s-a alocat noua zona cu succes, daca nu se va intoarce null.
+    Daca new_size < old_size atunci se vor copia new_size elemente de la inceputul vectorului in noua zona de memorie.
+
+    Ex: initial = [1,2,3,4,5,6], old_size = 6, new_size = 2--> [1, 2]
+
+
+Realizati o functie care creste dimensiunea unei matrice de la N x N la (N + 2) x (N + 2).
+
+Ex: [[1,2,3],
+    [4, 5, 6],
+    [7, 8, 9]]
+
+    [[1, 2, 3, 0, 0],
+     [4, 5, 6, 0, 0],
+     [7, 8, 9, 0, 0],
+     [0, 0, 0, 0, 0],
+     [0, 0, 0, 0, 0]]
